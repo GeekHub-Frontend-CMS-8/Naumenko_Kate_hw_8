@@ -1,0 +1,18 @@
+.identify-brand {
+  background-color: #fafafa;
+
+  .identify-brand-img {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .web-dev-img {
+    margin-left: 75px;
+  }
+
+.identify-brand-img {
+  margin-right: 35px;
+  }
+}

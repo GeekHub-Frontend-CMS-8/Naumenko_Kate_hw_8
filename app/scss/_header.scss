@@ -1,0 +1,92 @@
+header {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  background-color: transparent;
+  position: absolute;
+
+  .top {
+    width: 100%;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    .company-logo {
+      color: #fff;
+      font: 25px "Cubano", "Helvetica", sans-serif;
+
+      .fa-paper-plane {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.site-navigation .main-menu,
+.site-navigation > input {
+  display: none;
+}
+
+.site-navigation > label {
+  display: block;
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  right: 20px;
+  width: 36px;
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.site-navigation > input:checked + .main-menu {
+  display: block;
+  clear: both;
+  top: 36px;
+  position: relative;
+  background-color: #211d39;
+  color: #fff;
+}
+
+.site-navigation {
+  display: block;
+  height: 48px;
+
+  .menu-item {
+    display: block;
+    padding: 12px 10px;
+    font: 18px "BrandonGrotesque-Medium", "Helvetica", sans-serif;
+
+    .anchor {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  .site-navigation {
+    height: auto;
+  }
+
+  .site-navigation {
+    .main-menu {
+      display: block;
+
+      .menu-item {
+        display: inline-block;
+      }
+    }
+  }
+
+  .site-navigation > label {
+    display: none
+  }
+
+  .top {
+    .company-logo {
+      padding-left: 0;
+    }
+  }
+}
+

@@ -1,0 +1,68 @@
+.our-skills {
+  display: flex;
+  justify-content: center;
+}
+
+.ellipse {
+  height: 72px;
+  width: 72px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 35px;
+}
+
+.skill-title {
+  color: #222222;
+  font: 22px "BrandonGrotesque-Medium", "Helvetica", sans-serif;
+}
+
+.skill {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .space {
+    max-width: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .skill {
+      max-width: 350px;
+      text-align: center;
+      margin-bottom: 50px;
+      display: flex;
+
+
+      //&:nth-last-child(1),
+      //&:nth-last-child(2) {
+      //  margin-bottom: 0;
+      //}
+
+      .ellipse {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .space .skill {
+    text-align: left;
+    max-width: 400px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+}
