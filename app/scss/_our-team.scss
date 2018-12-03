@@ -1,0 +1,61 @@
+.our-team {
+  display: flex;
+  justify-content: center;
+  background-color: #111111;
+  
+  .titles {
+    color: $primary-text-color;
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $primary-text-color;
+  }
+
+  .team-text {
+    max-width: 600px;
+    margin-top: 50px;
+    color: $primary-text-color;
+    font: 20px "BrandonGrotesque-Regular", "Helvetica", sans-serif;
+  }
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.userpic {
+  width: 210px;
+  height: 210px;
+  margin: 80px 30px 0 30px;
+  border: 7px solid $primary-text-color;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 20px;
+  font: $primary-font-size $secondary-font;
+
+  .post {
+    font: $tertiary-font-size $primary-font;
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid $primary-text-color;
+    border-radius: 50%;
+  }
+}

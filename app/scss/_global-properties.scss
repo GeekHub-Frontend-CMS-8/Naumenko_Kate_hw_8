@@ -1,10 +1,10 @@
 .row {
-  //min-width: 300px;
   max-width: 940px;
+  width: 100%;
   padding: 0 20px;
   box-sizing: border-box;
   display: flex;
-  //justify-content: center;
+  justify-content: center;
 }
 
 .distance {
@@ -12,12 +12,21 @@
 }
 
 .titles {
-  color: #222222;
-  font: 31px "BrandonGrotesque-Bold", "Helvetica", sans-serif;
+  color: $tertiary-text-color;
+  font: 31px $secondary-font;
 
   .thin {
     font-family: "BrandonGrotesque-Light", "Helvetica", sans-serif;;
   }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.under-title {
+  color: $secondary-text-color;
+  font: $secondary-font-size $primary-font;
 }
 
 .services {
@@ -31,13 +40,36 @@
 
 .text {
   padding: 15px 0 25px;
-  color: #777777;
-  font: 16px "BrandonGrotesque-Regular", "Helvetica", sans-serif;
+  color: $secondary-text-color;
+  font: $tertiary-font-size $primary-font;
   letter-spacing: -0.45px;
   white-space: pre-line;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
+  .services  .intro {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .service-icon{
+    align-items: center;
+    display: flex;
+  }
+
+  .text {
+    font-size: $primary-font-size;
+    padding-bottom: 0;
+  }
+
+  .under-title {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .row{
     padding: 0;
   }
@@ -48,24 +80,5 @@
 
   .distance {
     padding: 100px 0;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .services  .intro {
-    display: flex;
-    align-items: center;
-    margin: 0 40px;
-    text-align: left;
-  }
-
-  .service-icon{
-    align-items: center;
-    display: flex;
-  }
-
-  .text {
-    font-size: 18px;
-    padding-bottom: 0;
   }
 }

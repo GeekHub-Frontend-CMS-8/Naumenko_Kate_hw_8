@@ -1,0 +1,22 @@
+.logos {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logos-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .logo {
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logos-wrapper .logo {
+    padding: 0;
+  }
+}

@@ -12,27 +12,27 @@
 }
 
 .offer {
-  color: #fff;
+  color: $primary-text-color;
   font: 21px "BrandonGrotesque-Light", "Helvetica", sans-serif;
 }
 
 .lagest-title {
   margin: 25px 0 65px;
-  color: #fff;
-  font: 36px "BrandonGrotesque-Bold", "Helvetica", sans-serif;
+  color: $primary-text-color;
+  font: $fourth-seniority-font-size $secondary-font;
   text-transform: uppercase;
 }
 
 .btn {
   padding: 10px 55px;
   background-color: transparent;
-  border: 3px solid #fff;
+  border: 3px solid $primary-text-color;
   border-radius: 5px;
-  color: #fff;
-  font: 23px "BrandonGrotesque-Bold", "Helvetica", sans-serif;
+  color: $primary-text-color;
+  font: 23px $secondary-font;
 }
 
-@media only screen and (min-width: 598px) {
+@media only screen and (min-width: 768px) {
   .offer {
     font-size: 32px;
   }

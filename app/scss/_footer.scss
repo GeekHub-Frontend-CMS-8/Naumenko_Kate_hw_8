@@ -1,0 +1,16 @@
+.bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #7690c5;
+
+  .row {
+    border-top: 1px solid #87a0d2;
+
+    .copyright {
+      padding: 30px 0;
+      color: $primary-text-color;
+      font: $tertiary-font-size $tertiary-font;
+
+    }
+  }
+}
