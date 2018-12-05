@@ -90,3 +90,11 @@ header {
   }
 }
 
+@media only screen and (max-device-width: 767px) {
+  .site-navigation > input:checked + .main-menu {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 65px;
+  }
+}

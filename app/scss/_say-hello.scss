@@ -89,6 +89,10 @@
 
   .communication {
     justify-content: start;
+    display: flex;
+    flex-direction: column;
+    height: 205px;
+    flex-wrap: wrap;
 
     .communication-item {
       margin-right: 12px;
